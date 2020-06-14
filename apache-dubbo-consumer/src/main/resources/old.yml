@@ -10,6 +10,7 @@ dubbo:
   protocol:
     name: dubbo
     port: -1
+    serialization: kryo
   registry:
     address: nacos://47.103.16.xxx:8848
 
@@ -29,3 +30,6 @@ management:
     web:
       exposure:
         include: "*"
+
+user:
+  name: "shawn"

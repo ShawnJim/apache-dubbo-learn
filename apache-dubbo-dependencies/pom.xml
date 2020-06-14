@@ -11,7 +11,8 @@
 
     <properties>
         <dubbo.version>2.7.3</dubbo.version>
-        <dubbom-actuator.version>2.7.3</dubbom-actuator.version>
+        <dubbo-actuator.version>2.7.3</dubbo-actuator.version>
+        <dubbo-kryo.version>2.7.2</dubbo-kryo.version>
         <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
         <spring-cloud-alibaba.verion>2.1.1.RELEASE</spring-cloud-alibaba.verion>
         <alibaba-spring-context-support.version>1.0.2</alibaba-spring-context-support.version>
@@ -58,6 +59,26 @@
                 <artifactId>dubbo-spring-boot-actuator</artifactId>
                 <version>${dubbo-actuator.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>dubbo-registry-nacos</artifactId>
+                <version>2.7.6</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <version>${dubbo.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-serialization-kryo</artifactId>
+                <version>${dubbo-kryo.version}</version>
+            </dependency>
+
+
             <dependency>
                 <groupId>com.alibaba.spring</groupId>
                 <artifactId>spring-context-support</artifactId>
